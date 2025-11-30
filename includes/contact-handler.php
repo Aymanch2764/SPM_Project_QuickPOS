@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         file_put_contents('contact-log.txt', $log_entry, FILE_APPEND);
         
         // Redirect to thank you page with name parameter
-        header("Location: ../thank-you.html?name=" . urlencode($name));
+        header("Location: ../thankyou.html?name=" . urlencode($name));
         exit();
         
     } else {
